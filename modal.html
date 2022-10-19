@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modal.css">
+    <script src="modal.js" defer></script>
+    <title>Modal</title>
+</head>
+<body>
+    <section class="rounded mb-2">
+        <h1>Modal</h1>
+        <div class="bg-gray rounded p-2">
+
+            <button data-modal-target="modal-1" class="btn bg-dark text-white">Open Modal-1</button>
+            <button data-modal-target="modal-2" class="btn bg-dark text-white">Open Modal-2</button>
+
+            <!--[Modal]-->
+            <div id="modal-1" class="modal-overlay">
+                <div class="modal modal-lg text-center">
+                    <h1>My Modal 1</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi!  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi!
+                    </p>
+                    <button data-modal-close="true" class="btn bg-wine text-white mt-1">Close</button>
+                </div>
+            </div>
+            
+             <!--[Modal]-->
+             <div id="modal-2" class="modal-overlay">
+                <div class="modal modal-lg text-center">
+                    <h1>My Modal 2</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi!  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum iste facere cum maiores sed nobis culpa atque doloremque, 
+                        aliquid mollitia maxime repellendus. Iure sunt officia vero impedit, 
+                        facere voluptatem sequi!
+                    </p>
+                    <button data-modal-close="true" class="btn bg-wine text-white mt-1">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

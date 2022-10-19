@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box !important;
+}
+
+
+
+body {
+    margin:0;
+    background-color: whitesmoke;
+}
+
+section {
+    margin:0;
+    padding:2rem;
+    background-color:rgb(236, 239, 240);
+}
+
+.rounded {  border-radius:5px;}
+.bg-gray { background: rgb(162, 167, 170);}
+.bg-dark { background: rgb(6, 24, 34); }
+.bg-wine { background: rgb(247, 10, 61); }
+.text-white { color:white; }
+.text-center { text-align: center; }
+.p-0 { padding: 0 !important;}
+.p-1 { padding:1rem !important;}
+.p-2 { padding:2rem !important;}
+.p-3 { padding:3rem !important;}
+.p-4 { padding:4rem !important;}
+
+.btn {
+    border:none;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    cursor:pointer;
+}
+
+.btn:hover, .btn:active {
+    opacity: 0.8;
+}
+
+/* -------- [ Modal ] ------- */
+
+.modal-overlay {
+    z-index: 999;
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color:rgba(0, 1, 1, 0.637);
+    width:100%;
+    height:100%;
+    padding:2rem;
+    
+    display:none; /* display:flex; */
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+}
+
+.modal-show {
+    display:flex !important;
+    opacity: 1 !important;
+    transition: opacity .15s linear;
+    pointer-events: all !important;
+}
+
+.modal {
+    padding: 2rem;
+    border-radius:5px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+.modal-sm { width: 30vw; }
+.modal-md { width: 50vw; }
+.modal-lg { width: 70vw; }
+.modal-xl { width: 90vw; }
